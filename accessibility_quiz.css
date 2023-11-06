@@ -1,0 +1,59 @@
+body {
+    background: #f5f6f7;
+    color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+}
+
+/* img elements will have a minimum width of 100px. 
+And as the viewport grows, the image will grow accordingly to be 18 percent of the viewport width.*/
+#logo {
+    width: max(100px, 18vw);
+    background-color: #0a0a23;
+    /*As described in the freeCodeCamp Style Guide, 
+    the logo should retain an aspect ratio of 35 / 4, and have padding around the text.*/
+    aspect-ratio: 35 / 4;
+    padding: 0.4rem;
+}
+
+/*Make the header take up the full width of its parent container, 
+set its height to 50px, 
+and set the background-color to #1b1b32. 
+Then, set the display to use Flexbox.*/
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+}
+
+
+h1 {
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);
+}
+
+
+nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+}
+
+/*Use the > selector to target the unordered list elements within the nav elements, 
+and use Flexbox to evenly space the children.*/
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+
