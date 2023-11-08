@@ -9,7 +9,7 @@ html {
 .label {
     border: 2px solid black;
     width: 270px;
-    margin: 20px auto;
+    /*margin: 20px auto;*/
     padding: 0 7px;
 }
 
@@ -21,6 +21,221 @@ To solve this, reset the box model by creating a * selector and giving it a box-
     box-sizing: border-box;
 }
 
+/*Remember that the use of h1, h2, and similar tags determine the semantic structure of your HTML. However, you can adjust the CSS of these elements to control the visual flow and hierarchy.
+
+Create an h1 rule and set the font-weight property to 800. This will make your h1 text bolder.*/
+header  h1 {
+    /*font-weight: 800;*//*Go ahead and remove the font-weight property from your h1 selector as well*/
+    text-align: center;
+    /*Fine-tune the placement of your h1 by giving it a top and bottom margin of -4px and a left and right margin of 0.*/
+    /*margin: -4px 0;*/
+    /*The letter-spacing property can be used to adjust the space between each character of text in an element*/
+    letter-spacing: 0.15px;
+}
+
+/*Create a p selector and remove all margins.*/
+p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divider {
+    border-bottom: 1px solid #888989;
+    /*Also give it a top and bottom margin of 2px. It should not have any left or right margin*/
+    margin: 2px 0;
+}
+
+
+/*Your new class does not have any styling yet. 
+Create a .bold selector and give it a font-weight property set to 800 to make the text bold.
+
+Go ahead and remove the font-weight property from your h1 selector as well.*/
+.bold {
+    font-weight: 800;
+}
+
+.large {
+    height: 10px;
+}
+
+.large, .medium {
+    background-color: black;
+    border: 0;
+}
+
+
+.small-text {
+    font-size: 0.85rem;
+}
+
+
+.calories-info h2 {
+    margin: 0;
+}
+
+.calories-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.left-container p {
+    margin: -5px -2px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.calories-info span {
+    font-size: 2.4em;
+    font-weight: 700;
+    margin: -7px -2px;
+}
+
+.medium {
+    height: 5px;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.indent {
+    margin-left: 1em;
+}
+
+.daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+}
+
+
+
+
+
+
+/*
+Step 5Passed
+Create a body selector and give it a font-family set to Open Sans with a fallback of sans-serif.
+
+Remember that fonts with spaces in the name must be wrapped in quotes for CSS.
+
+Step 6Passed
+The font is a bit small. Create an html selector and set the font to have a size of 16px.
+
+Step 8Passed
+Borders can be used to group and prioritize content.
+
+Create a .label selector and give it a border set to 2px solid black.
+
+Step 9Passed
+Good use of white space can bring focus to the important elements of your page, and help guide your user's eyes through your text.
+
+Give your .label selector a width property set to 270px.
+
+Step 10Passed
+Give your .label selector a margin property set to 20px auto, and a padding property set to 0 7px.
+
+Step 11Passed
+If you inspect your .label element with your browser's developer tools, you may notice that it's actually 288 pixels wide instead of 270. This is because, by default, the browser includes the border and padding when determining an element's size.
+
+To solve this, reset the box model by creating a * selector and giving it a box-sizing property of border-box.
+
+Step 12Passed
+Remember that the use of h1, h2, and similar tags determine the semantic structure of your HTML. However, you can adjust the CSS of these elements to control the visual flow and hierarchy.
+
+Create an h1 rule and set the font-weight property to 800. This will make your h1 text bolder.
+
+Step 13Passed
+Give your h1 selector a text-align property of center.
+
+Step 14Passed
+Fine-tune the placement of your h1 by giving it a top and bottom margin of -4px and a left and right margin of 0.
+
+Step 15Passed
+Create a p selector and remove all margins.
+
+Step 17Passed
+Create a selector for your new .divider and set the border-bottom property to 1px solid #888989. Also give it a top and bottom margin of 2px. It should not have any left or right margin.
+
+Step 18Passed
+The letter-spacing property can be used to adjust the space between each character of text in an element.
+
+Give your h1 selector a letter-spacing property set to 0.15px to space them out a bit more.
+
+Step 20Passed
+Your new class does not have any styling yet. Create a .bold selector and give it a font-weight property set to 800 to make the text bold.
+
+Go ahead and remove the font-weight property from your h1 selector as well.
+
+
+Step 23
+Now we can add the horizontal spacing using flex. In your p selector, 
+add a display property set to flex and a justify-content property set to space-between.
+
+Step 25
+Now update your h1 selector to be header h1 to specifically target your h1 element 
+within your new header.
+
+Step 27
+Create a new .large selector and give it a height property set to 10px. 
+Also create an .large, .medium selector and set the background-color property to black.
+
+Step 28
+You may notice there is still a small border at the bottom of your .large element. 
+To reset this, give your .large, .medium selector a border property set to 0.
+
+Note: the medium(medium) class will be utilized later for the thinner bars of the nutrition label.
+
+Step 31
+The rem unit stands for root em, and is relative to the font size of the html element.
+
+Create a .small-text selector and set the font-size to 0.85rem, which would calculate 
+to roughly 13.6px (remember that you set your html to have a font-size of 16px).
+
+Step 32
+Create a .calories-info h2 selector and remove all margins.
+
+Step 34
+Create a new .calories-info selector and give it a display property set to flex. 
+Also give it a justify-content property set to space-between and align-items property set to flex-end.
+
+Step 35
+Create a new .left-container p selector setting the top and bottom margin to -5px, 
+and the left and right margin to -2px. Also set the font-size to 2em and font-weight to 700.
+
+Step 36
+Create a .calories-info span selector, set its font-size to 2.4em and font-weight to 700.
+
+Step 37
+Typography is often more art than science. 
+You may have to tweak things like alignment until it looks correct.
+
+Give your .calories-info span selector a margin set to -7px -2px. 
+This will shift your 230 text into place.
+
+Step 39
+Create an .medium selector and give it a height property of 5px.
+
+Step 41
+The text % Daily Value * should be aligned to the right. 
+Create a .right selector and use the justify-content property to do it.
+
+Step 46
+Create a new .indent selector and give it a margin-left property set to 1em.
+
+Step 47
+Create a .daily-value p selector to target all of your p elements in the daily-value section. 
+Give this new selector a border-bottom set to 1px solid #888989.
+
+Step 49
+The :not pseudo-selector can be used to select all elements that do not match the given CSS rule.
+
+div:not(#example) {
+  color: red;
+}
+The above selects all div elements without an id of example.
+
+Modify your .daily-value p selector to exclude the .no-divider elements.
 
 
 
@@ -28,8 +243,4 @@ To solve this, reset the box model by creating a * selector and giving it a box-
 
 
 
-
-
-
-
-
+*/
