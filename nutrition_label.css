@@ -108,9 +108,16 @@ Go ahead and remove the font-weight property from your h1 selector as well.*/
     border-bottom: 1px solid #888989;
 }
 
+.double-indent {
+    margin-left: 2em;
+}
 
-
-
+.note {
+    font-size: 0.6rem;
+    margin: 5px 0;
+    padding: 0 8px;
+    text-indent: -8px;
+}
 
 
 /*
@@ -238,9 +245,12 @@ The above selects all div elements without an id of example.
 Modify your .daily-value p selector to exclude the .no-divider elements.
 
 
+Step 59
+Create a .double-indent selector and give it a left margin of 2em.
 
-
-
+Step 66
+Create a .note selector, and set the size of the font to 0.6rem. 
+Also set the top and bottom margins to 5px, removing the left and right margins.
 
 
 */

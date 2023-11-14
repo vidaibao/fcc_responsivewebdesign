@@ -36,6 +36,26 @@
             <div class="divider"></div>
             <p><span><span class="bold">Total Fat</span> 8g</span><span class="bold">10%</span></p>
             <p class="indent no-divider">Saturated Fat 1g <span class="bold">5%</span></p>
+            <div class="divider"></div>
+            <p class="indent no-divider"><span><i>Trans</i> Fat 0g</span></p>
+            <div class="divider"></div>
+            <p><span><span class="bold">Cholesterol</span> 0mg</span> <span class="bold">0%</span></p>
+            <p><span><span class="bold">Sodium</span> 160mg</span> <span class="bold">7%</span></p>
+            <p><span><span class="bold">Total Carbohydrate</span> 37g</span> <span class="bold">13%</span></p>
+            <p class="indent no-divider">Dietary Fiber 4g</p>
+            <div class="divider"></div>
+            <p class="indent no-divider">Total Sugars 12g</p>
+            <div class="divider double-indent"></div>
+            <p class="double-indent  no-divider">Includes 10g Added Sugars <span class="bold">20%</span></p>
+            <div class="divider"></div>
+            <p class="no-divider"><span class="bold">Protein</span> 3g</p>
+            <div class="divider large"></div>
+            <p>Vitamin D 2mcg <span>10%</span></p>
+            <p>Calcium 260mg <span>20%</span></p>
+            <p>Iron 8mg  <span>45%</span></p>
+            <p class="no-divider">Potassium 235mg <span>6%</span></p>
+            <div class="divider medium"></div>
+            <p class="note">* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.</p>
         </div>
     </div>
 </body>
@@ -126,12 +146,69 @@ The bottom borders under your % Daily Value * and Saturated Fat 1g 5% elements
  do not extend the full width of the label. Add no-divider to the class for these two elements.
 
 
+Step 50
+Now you will have to add separate dividers below your .no-divider elements.
+
+Your first .no-divider element has a .divider after it. 
+Create another .divider after your second .no-divider element.
 
 
+Step 51
+After your last .divider, create another p element with the text Trans Fat 0g. 
+Italicize the word Trans by wrapping it in an i element. 
+Give the new p element the class attribute set to indent no-divider. 
+Wrap Trans Fat 0g in a span element for alignment.
 
+Step 52
+Create another .divider after your last p element.
 
+Step 53
+After your last .divider, create a new p element with the text Cholesterol 0mg 0%. 
+Wrap the text Cholesterol in a span element, and give that span element the class of bold. 
+Wrap the text 0% in another span element, with the class of bold. Finally, 
+nest the Cholesterol span element and the text 0mg in an additional span element for alignment.
 
+Step 54
+Below your last p element, create another p element with the text Sodium 160mg 7%. 
+Wrap the text Sodium in a span element with a class attribute set to bold. 
+Wrap the 7% text in another span element with the class set to bold. 
+Also add an additional span element around Sodium 160mg for aligning it correctly.
 
+Step 55
+Add another p element with the text Total Carbohydrate 37g 13%. 
+Like before, use span elements to make the text Total Carbohydrate and 13% bold. 
+Also add an additional span element to wrap the Total Carbohydrate 37g text in a span 
+element so to have it aligned to the left, and 13% to the right.
 
+Step 57
+Create another p element after your last .divider, and give it the text Total Sugars 12g. 
+Assign that p element the class values necessary to indent it and remove the bottom border. 
+Then create another .divider below your new p element.
 
+Step 58
+The advantage to creating these dividers is that you can apply specific classes to style 
+them individually. Add double-indent to the class for your last .divider.
+
+Step 60
+Below your .double-indent element, add a new p element with the text 
+Includes 10g Added Sugars 20%. Your new p element should also be double indented, 
+and have no bottom border. Use a span to make the 20% bold and right aligned.
+
+Then create another divider after that p element.
+
+Step 61
+After your last divider, create another p element with the text Protein 3g. 
+Use the necessary classes to remove the bottom border, and a span to make the Protein bold.
+
+Following this element, create a large divider.
+
+Step 62
+Create another p element below your large divider. Give the p element the text Vitamin D 2mcg 10%.
+
+The p element contains only text, you can wrap the percentage in a span element so that 
+it is considered a separate entity from the rest of the text, and it's moved to the right.
+
+Step 64
+Create the final p element for your .daily-value section. Give it the text Potassium 235mg 6%. 
+Align the 6% text to the right, and remove the bottom border of the p element.
 -->
